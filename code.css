@@ -1,0 +1,397 @@
+/* main */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* about section */
+
+.section-intro {
+    height: 820px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(background-image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* marquee */
+
+.grand-opening {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.grand-opening a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.carousel-img {
+  height: 400px; 
+  object-fit: cover;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.opening-time,
+.contact-adress,
+.extra-information {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    font: optional;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.opening-time h3,
+.contact-adress h3,
+.extra-information h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span,
+.extra-information p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span,
+    .extra-information p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+/*chefs button*/
+
+.know-chefs-btn {
+    background-color: lightgrey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 60px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .know-chefs-btn:hover {
+    background-color: #ccc;
+    text-decoration: none;
+  }
+  
+  /* chefs */
+
+.chef-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #f3f3f3c0; 
+    padding: 20px; 
+  }
+  
+  .chef {
+    flex: 0 0 30%; 
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .chef-info img {
+    width: 100%; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+    border: black;
+  }
+  
+  .chef-info h2 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chef-info p {
+    font-style: bold;
+    color: #555;
+  }
+
+  /* reservations */
+
+  .section-intro {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .reservation-section {
+    background-color: #d2d2d2c0;
+    margin: auto;
+  }
+  
+  .reservation-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f3f3f3c0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .reservation-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: flex;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group input[type="email"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #555;
+  }
+
+   /* menu */
+
+  .menu-section {
+    background-color: #f3f3f3c0; 
+    padding: 20px;
+  }
+  
+  .menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(237, 229, 227, 0.753);
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-bottom: 15px;
+    border: 1px solid black; 
+  }
+
+  .menu-container h2 {
+    text-align: center; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+  }
+  
+  .item-description {
+    width: 70%;
+  }
+  
+  .item-description h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .item-description p {
+    margin-bottom: 10px;
+  }
+  
+  .item-price {
+    text-align: right;
+    width: 25%;
+  }
+  
+  .item-price p {
+    font-weight: bold;
+  }
+  
+  
+  
